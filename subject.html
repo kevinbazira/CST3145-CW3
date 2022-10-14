@@ -28,7 +28,9 @@
             },
             methods: {
                 addToCart: function(){
-                    this.spaces--;
+                    if(this.spaces > 0){
+                        this.spaces--;
+                    }
                 }
             }
         });
