@@ -13,7 +13,9 @@
         <p>Location: {{location}}</p>
         <p>Price: {{price}}</p>
         <p>Spaces: {{spaces}}</p>
-        <button>Add to Cart</button>
+        <button v-on:click="addToCart">
+                Add to Cart
+        </button>
     </div>
     <script type="text/javascript">
         let webstore = new Vue({
@@ -23,6 +25,11 @@
                 location: "London",
                 price: "£100",
                 spaces: 5
+            },
+            methods: {
+                addToCart: function(){
+                    this.spaces--;
+                }
             }
         });
     </script>
