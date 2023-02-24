@@ -1,0 +1,15 @@
+{
+    "name": "My WebStore PWA",
+    "short_name": "webstore",
+    "description": "my online web store",
+    "icons": [
+        {
+            "src": "images/icons8-grocery-store-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "start_url": "index.html",
+    "display": "fullscreen",
+    "background_color": "#339AF0"
+}
